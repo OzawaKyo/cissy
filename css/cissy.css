@@ -5,6 +5,7 @@ body{
 }
 .navv{
     border-bottom:1px solid white;
+    transition: opacity 0.5s ease-in-out;
 }
 .navv.active{
     border-bottom: none;
@@ -97,6 +98,7 @@ body{
 }
 
 .categories.active{
+    position: relative;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -107,6 +109,7 @@ body{
     cursor:pointer;
     animation: slide-down 0.5s ease-in-out forwards; 
 }
+
 @keyframes slide-down {
     from {
       opacity: 0;
@@ -123,4 +126,9 @@ body{
 .cat-images{
     width: 230px;
     height: 550px;
+    overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.cat-images:hover{
+    transform: translateY(-5px);
 }
