@@ -1,0 +1,86 @@
+body{
+    background-color: #0C0B0B;
+    margin: 0;
+}
+.nav{
+    border-bottom:1px solid white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 12em;
+    margin-right: 12em;
+}
+.logod{
+    width: 113.69px;
+    display: flex;
+    align-self: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+.star{
+    position: relative;
+    height: 174px;
+    width: 80px;
+    justify-self: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.menu.active{
+    transform: rotate(360deg);
+}
+.button-28{
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5em;
+   /* width: 113px; */
+}
+.burger{
+    fill: black;
+}
+.menu-icon.active .burger {
+    display: none;
+}
+
+.menu-icon.active .x {
+    display: inline;
+}
+.menu-icon .x{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .navbar{
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .navbar{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .menu{
+        display: none;
+    }
+    .logod{
+        width: 66px;
+    }
+    .button-28{
+        width: 66px;
+    }
+}
