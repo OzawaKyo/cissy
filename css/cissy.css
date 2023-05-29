@@ -5,10 +5,12 @@ body{
 }
 .navv{
     border-bottom:1px solid white;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    animation: slide-up 0.5s ease-in-out forwards;
 }
 .navv.active{
     border-bottom: none;
+    transform: translateY(100%);
 }
 .navbar{
     display: flex;
@@ -32,7 +34,23 @@ body{
     height: 174px;
     width: 80px;
     justify-self: center;
+    animation: slide-up 0.5s ease-in-out forwards;
 }
+.star.active{
+    display: none;
+    transform: translateY(100%); 
+}
+
+@keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%); /* Start offscreen */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
 .menu{
     display: flex;
     justify-content: center;
@@ -40,7 +58,7 @@ body{
     transition: transform 0.3s ease;
 }
 .menu.active{
-    transform: rotate(360deg);
+    /* transform: rotate(360deg); */
 }
 .button-28{
    display: flex !important;
@@ -102,27 +120,25 @@ body{
     display: flex !important;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    margin-top: 1em;
+    gap: 1em;
+    margin-top: 2em;
     margin-right: 5em;
     margin-left: 5em;
     cursor:pointer;
-    animation: slide-down 0.5s ease-in-out forwards; 
+    animation: slide-down 1s ease-in-out forwards; 
 }
 
 @keyframes slide-down {
     from {
       opacity: 0;
-      transform: translateY(-100%); /* Start offscreen */
+      transform: translateY(-100%);
     }
     to {
       opacity: 1;
-      transform: translateY(0); /* Move to original position */
+      transform: translateY(0);
     }
   }
-.star.active{
-    display: none;
-}
+
 .cat-images{
     width: 230px;
     height: 550px;
@@ -131,4 +147,20 @@ body{
 }
 .cat-images:hover{
     transform: translateY(-5px);
+}
+
+
+
+.big-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+    animation: slide-up 1s ease-in-out forwards; 
+
+}
+.big-logo.active{
+    display: none;
+    transform: translateX(-100%);
+
 }

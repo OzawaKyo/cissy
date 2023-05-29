@@ -3,7 +3,7 @@ const menuText = document.querySelector('.menu');
 const categorie = document.querySelector('.categories')
 const star = document.querySelector('.star')
 const border = document.querySelector('.navv')
-
+const bigLogo = document.querySelector('.big-logo')
 
 menuIcon.addEventListener('click', function() {
     this.classList.toggle('active');
@@ -12,5 +12,6 @@ menuIcon.addEventListener('click', function() {
     categorie.classList.toggle('active');
     star.classList.toggle('active');
     border.classList.toggle('active');
+    bigLogo.classList.toggle('active');
 
 });
