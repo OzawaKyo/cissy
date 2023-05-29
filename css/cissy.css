@@ -90,7 +90,11 @@ body{
 }
 
 
-
+.categories{
+    display: none;
+    opacity: 0; 
+    transform: translateY(-100%);
+}
 
 .categories.active{
     display: flex !important;
@@ -100,10 +104,19 @@ body{
     margin-top: 1em;
     margin-right: 5em;
     margin-left: 5em;
+    cursor:pointer;
+    animation: slide-down 0.5s ease-in-out forwards; 
 }
-.categories{
-    display: none;
-}
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-100%); /* Start offscreen */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
 .star.active{
     display: none;
 }
