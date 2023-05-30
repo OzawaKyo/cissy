@@ -2,6 +2,7 @@ body{
     background-color: #0C0B0B;
     margin: 0;
     color: white;
+    overflow: hidden;
 }
 .navv{
     border-bottom:1px solid white;
@@ -56,9 +57,15 @@ body{
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    animation: slide-up 0.3s ease-in-out forwards; 
+
 }
 .menu.active{
     /* transform: rotate(360deg); */
+    animation: slide-down 0.3s ease-in-out forwards; 
+    transition: transform 0.3s ease;
+
+
 }
 .button-28{
    display: flex !important;
@@ -69,16 +76,22 @@ body{
 }
 .burger{
     fill: black;
+    animation: slide-up 0.3s ease-in-out forwards; 
 }
 .menu-icon.active .burger {
     display: none;
+    transition: transform 0.3s ease;
 }
 
 .menu-icon.active .x {
     display: inline;
+    animation: slide-down 0.3s ease-in-out forwards; 
+
 }
 .menu-icon .x{
     display: none;
+    transition: transform 0.3s ease;
+
 }
 @media screen and (max-width: 900px) {
     .navbar{
