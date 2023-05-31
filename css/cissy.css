@@ -93,33 +93,6 @@ body{
     transition: transform 0.3s ease;
 
 }
-@media screen and (max-width: 900px) {
-    .navbar{
-        margin-left: 6em;
-        margin-right: 6em;
-    }
-}
-@media screen and (max-width: 650px) {
-    .navbar{
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-}
-@media screen and (max-width: 450px) {
-    .navbar{
-        margin-left: 3em;
-        margin-right: 3em;
-    }
-    .menu{
-        display: none;
-    }
-    .logod{
-        width: 66px;
-    }
-    .button-28{
-        width: 66px;
-    }
-}
 
 
 .categories{
@@ -159,7 +132,7 @@ body{
   transition: transform 0.3s ease-in-out;
 }
 .cat-images:hover{
-    transform: translateY(-5px);
+    transform: translateY(-30px);
 }
 
 
@@ -176,4 +149,46 @@ body{
     display: none;
     transform: translateX(-100%);
 
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .navbar{
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .navbar{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .menu{
+        display: none;
+    }
+    .logod{
+        width: 66px;
+    }
+    .button-28{
+        width: 66px;
+    }
+    .clari{
+        width: 350px;
+        margin-top: 8em;
+    }
+    .star2{
+        display: none;
+    }
+    .cat-images{
+        width: 100px;
+        height: 250px;
+    }
+    .categories.active{
+        margin: 0;
+        margin-top: 8em;
+    }
 }
