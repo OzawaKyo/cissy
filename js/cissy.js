@@ -15,3 +15,4 @@ menuIcon.addEventListener('click', function() {
     bigLogo.classList.toggle('active');
 
 });
+
