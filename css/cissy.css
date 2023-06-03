@@ -183,9 +183,10 @@ body{
     margin: 5em;
     font-family: 'berlin';
     text-align: center;
-    margin-left: 17em ;
-    margin-right: 17em ;
-    font-size: 20px;
+    margin-left: 19.1em ;
+    margin-right: 19.1em ;
+    font-size: 22.5px;
+    letter-spacing: 0.03em;
 }
 @keyframes animate {
     0%{
