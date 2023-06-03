@@ -6,7 +6,7 @@ body{
     background-color: #0C0B0B;
     margin: 0;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .navv{
     border-bottom:1px solid white;
@@ -159,7 +159,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7em;
+    flex-direction: column;
 }
 .box{
     background: url(../images/DALL·E\ 2023-06-03\ 21.56.06\ -\ wall.png);
@@ -174,10 +174,12 @@ body{
 
 .clari:hover{
     cursor: pointer;
+
 }
 
 .description{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5em;
@@ -187,7 +189,9 @@ body{
     margin-right: 19.1em ;
     font-size: 22.5px;
     letter-spacing: 0.03em;
+    
 }
+
 @keyframes animate {
     0%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -200,6 +204,49 @@ body{
     }
 }
 
+.details{
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    margin-top: 7em;
+    height: 70vh;
+}
+.detail{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 0.5em;
+    text-align: left;
+    min-width: 400px;
+}
+.nomargin{
+    margin: 0;
+    padding: 0;
+}
+.little-star1{
+    align-self: first baseline;
+}
+.little-star2{
+    align-self: last baseline;
+}
+.skills{
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.ae{
+    display: flex;
+    align-items: center;
+    gap: 0.5em; 
+    font-size: 38px;   
+}
 
 @media screen and (max-width: 900px) {
     .navbar{
