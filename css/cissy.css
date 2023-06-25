@@ -192,6 +192,8 @@ body{
     
 }
 
+
+
 @keyframes animate {
     0%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -244,8 +246,13 @@ body{
 .ae{
     display: flex;
     align-items: center;
-    gap: 0.5em; 
     font-size: 38px;   
+    gap: 0.5em;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 
 @media screen and (max-width: 900px) {
