@@ -19,10 +19,20 @@ body{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
     height: 90px;
-    margin-left: 12em;
+    justify-content: space-between;
+    margin-left: 21em;
     margin-right: 12em;
+}
+.rightnav{
+    display: flex;
+    align-self: center;
+    gap: 1.5em;
+    align-items: center;
+}
+.socials{
+    width: 40%;
+    height: 20%;
 }
 .logod{
     width: 113.69px;
@@ -30,15 +40,14 @@ body{
     align-self: center;
 }
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 40%;
     align-self: center;
 }
 .star{
     position: relative;
     height: 174px;
     width: 80px;
-    justify-self: center;
+    justify-self: center !important;
     animation: slide-up 0.5s ease-in-out forwards;
 }
 .star.active{
