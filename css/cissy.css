@@ -43,10 +43,6 @@ body{
     width: 40%;
     align-self: center;
 }
-.socials{
-    width: 45px;
-    height: 45px;
-}
 .star{
     position: relative;
     height: 174px;
@@ -58,7 +54,20 @@ body{
     display: none;
     transform: translateY(100%); 
 }
-
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    font-family: 'roboto';
+    /* color: #C5C5C5; */
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 @keyframes slide-up {
     from {
       opacity: 0;
