@@ -6,7 +6,6 @@ body{
     background-color: #0C0B0B;
     margin: 0;
     color: white;
-    /* overflow: hidden; */
 }
 .navv{
     border-bottom:1px solid white;
@@ -21,7 +20,7 @@ body{
     display: flex;
     height: 90px;
     justify-content: space-between;
-    margin-left: 21em;
+    margin-left: 12em;
     margin-right: 12em;
 }
 .rightnav{
@@ -29,10 +28,7 @@ body{
     align-self: center;
     gap: 1.5em;
     align-items: center;
-}
-.socials{
-    width: 40%;
-    height: 20%;
+    cursor: pointer;
 }
 .logod{
     width: 113.69px;
@@ -42,6 +38,10 @@ body{
 .logo{
     width: 40%;
     align-self: center;
+}
+.socials{
+    width: 45px;
+    height: 45px;
 }
 .star{
     position: relative;
@@ -262,6 +262,19 @@ body{
     display: flex;
     justify-content: space-between;
     width: 300px;
+}
+.big-logo{
+    display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-top: 8em;
+    animation: slide-up 1s ease-in-out forwards; 
+
+}
+.big-logo.active{
+    display: none;
+    transform: translateX(-100%);
+
 }
 
 @media screen and (max-width: 900px) {

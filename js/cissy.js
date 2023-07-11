@@ -4,6 +4,7 @@ const categorie = document.querySelector('.categories')
 const star = document.querySelector('.star')
 const border = document.querySelector('.navv')
 const bigLogo = document.querySelector('.big-logo')
+const photos = document.querySelector('.photos')
 
 menuIcon.addEventListener('click', function() {
     this.classList.toggle('active');
@@ -13,6 +14,6 @@ menuIcon.addEventListener('click', function() {
     star.classList.toggle('active');
     border.classList.toggle('active');
     bigLogo.classList.toggle('active');
-
+    photos.classList.toggle('active');
 });
 
