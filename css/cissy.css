@@ -339,6 +339,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5em;
 }
 .face{
     margin-top: 2em;
