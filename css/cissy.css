@@ -201,7 +201,7 @@ body{
 
 .description{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     margin: 5em;
@@ -335,9 +335,9 @@ body{
 }
 .design{
     font-family: 'lemon';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
     align-items: center;
     margin-bottom: 5em;
 }
