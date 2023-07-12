@@ -121,8 +121,6 @@ body{
     transition: transform 0.3s ease;
 
 }
-
-
 .categories{
     display: none;
     opacity: 0; 
@@ -141,9 +139,7 @@ body{
     cursor:pointer;
     animation: slide-down 1s ease-in-out forwards; 
 }
-.designs2{
-    display: flex;
-}
+
 @keyframes slide-down {
     from {
       opacity: 0;
@@ -345,10 +341,10 @@ body{
     align-items: center;
 }
 .face{
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .designs{
-    margin-top: 5em;
+    margin-top: 7em;
     display: flex;
     justify-content: center;
     gap: 11em;
@@ -363,6 +359,24 @@ body{
     font-size: 28px;
     /* text-align: center; */
 }
+.designs2{
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 8em;
+    margin-right: 8em;
+    gap: 3em;
+}
+.dd{
+    width: 500px;
+    height: 300px;
+}
+.desc2{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
 @media screen and (max-width: 900px) {
     .navbar{
         margin-left: 6em;
